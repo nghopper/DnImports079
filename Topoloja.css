@@ -1,0 +1,75 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(Assets/logo.png);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      color: #ffffff;
+      padding: 15px 20px;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      flex: 1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Botões à esquerda */
+    .nav-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-buttons button {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    /* Nome no centro */
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Search box à direita */
+    .search-box input {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }

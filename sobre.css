@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(Assets/M4_MacBook.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/* Header ocupa a largura toda e fica fixo no topo */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  padding: 15px 20px;
+  position: fixed; /* fixo no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100; /* garante que fique sobre o conteúdo */
+}
+
+/* Botões à esquerda */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #fff;
+  color: #111;
+}
+
+ /* Nome no centro */
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+/* Search box à direita */
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.about-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.center{
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgb(15, 187, 255);
+}
+
+.center p{
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.center h2{
+  text-align: center;
+  font-size: 1.4em;
+  text-decoration: underline;
+}
